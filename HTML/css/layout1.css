@@ -5,6 +5,23 @@
     margin-right: auto;
 }
 
+.navbar li { 
+    /* selector 문법 : > -  ~ 안에 있는 직계자식
+    selector 문법 : 공백 - ~ 안에 있는 모든 자식 */
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
 .blog-content {
     width: 80%;
     height: 200px;

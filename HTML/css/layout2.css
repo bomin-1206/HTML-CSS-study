@@ -1,0 +1,46 @@
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    background-size: cover;
+    /* cover : 배경이 짤려도 상관없으니 빈공간 없이 배경으로 꽉채워라
+       contain : 배경이 짤리면 안됩니다 */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    position: relative;
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.main-introduce {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.main-button {
+    border: none;
+    border-radius: 5px;
+    background: white;
+    padding: 15px;
+    font-size: 18px;
+    color: gray;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute; /* position을 부여하면 1. 공중에 뜸, 2.좌표이동가능 */
+    /* position : static -> 좌표이동 X 
+       position : fixed -> 현재 화면이 기준
+       position : relative -> 내 원래 위치를 기준으로 이동하세요
+       position : absolute -> 내 부모 태그 중에 position : relative 가진 부모 기준 */
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+}
