@@ -1,3 +1,13 @@
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+/* normalize 사용하면 다른 브라우간에서도 똑같이 작용 */
+
+
 .main-background {
     width: 100%;
     height: 500px;
@@ -43,4 +53,74 @@
     right: 0;
     margin: auto;
     width: 150px;
+}
+
+.sub-box {
+    background-color: #eee;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    top: 450px; */
+    position: relative;
+    top: -40px;
+    margin: auto;
+    text-align: center;
+    /* box-sizing: border-box; 이러면 width가 padding, border 포함함 */
+    /* box-sizing: content-box; 이러면 width가 padding, border 포함 안함 */
+}
+
+/* input[속성명 = 속성값] -> input[type=text] -> type이 text인 것만 디자인 해주세요 */
+/* 
+input { 
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+} */
+
+.form-background {
+    background-color: black;
+    padding: 30px;
+}
+
+.form-white {
+    background-color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.yellow-button {
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #ffa100;
+    color: white;
+    border: none;
 }

@@ -1,0 +1,62 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.content {
+    width: 350px;
+    margin: auto;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input[type=email] {
+    width: 350px;
+    text-decoration: underline;
+}
+
+input[class=name] {
+    width: 100%;
+}
+
+.f_name {
+    width: 47%;
+    float: left;
+}
+
+.l_name {
+    width: 47%;
+    float: right
+}
+
+.message {
+    width: 350px;
+    height: 150px;
+}
+
+.send {
+    border: none;
+    background-color: #ffa100;
+    color: white;
+    padding: 10px;
+    width: 130px;
+    float: right;
+    font-size: 18px;
+    border-radius: 5px;
+}
