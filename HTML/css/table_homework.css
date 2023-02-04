@@ -1,3 +1,67 @@
+.background {
+    background-color: #8fb0c6;
+    padding: 50px;
+}
+
+.form {
+    width: 700px;
+    height: 370px;
+}
+
+.title {
+    color: navy;
+    font-weight: 500;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    width: 100%;
+    height: 250px;
+}
+
 th, td {
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+    color: #5f85bb;
+}
+
+.camera1 {
+    width: 25%;
+    float: left;
+}
+
+.camera2 {
+    width: 20%;
+    float: left;
+}
+
+.sony-logo {
+    color: black;
+}
+
+.total_money {
+    text-align: right;
+    font-size: 20px;
+}
+
+.more {
+    padding-top: 20px;
+}
+
+.link {
+    color: navy;
+    font-weight: 500;
+}
+
+.buy-button {
+    border: none;
+    background-color: navy;
+    color: white;
+    font-size: 16px;
+    width: 240px;
+    height: 50px;
+    border-radius: 5px;
+    float: right;
 }
