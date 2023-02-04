@@ -1,0 +1,28 @@
+/* Utility class */
+.f-small {
+    font-size: 12px;
+}
+
+.f-mid {
+    font-size: 16px;
+}
+
+.f-lg {
+    font-size: 20px;
+}
+
+.main_btn { /* 뼈대 디자인 class */
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: white
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}

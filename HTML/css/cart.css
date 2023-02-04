@@ -46,6 +46,19 @@
     padding: 30px 0 70px 0;
 }
 
+.custom-link {
+    color: navy;
+    font-weight: 500;
+}
+
+.custom-link:link { /* 방문 전 링크 스타일링 */
+    color: violet;
+}
+
+.custom-link:visited { /* 방문 후 링크 스타일링 */
+    color: red;
+}
+
 .buy_bt {
     width: 35%;
     max-width: 230px;
@@ -56,4 +69,17 @@
     height: 50px;
     font-size: 16px;
     float: right;
+    cursor: pointer;
+}
+
+.buy_bt:hover { /* 마우스를 올렸을 때 */
+    background-color: chocolate;
+}
+
+.buy_bt:focus { /* 커서 찍혀 있을 때 */
+    background-color: grey;
+}
+
+.buy_bt:active { /* 클릭 중 */
+    background-color: brown;
 }
