@@ -1,7 +1,59 @@
-table {
-    border-collapse: collapse; /* <table>은 기본적으로 틈이 존재 -> 없애려면 border-collapse : collapse */
+/* 셀 안의 요소 상하 정렬 -> vertical-align : top/middle/bottom */
+/* border-collapse: collapse; <table>은 기본적으로 틈이 존재 -> 없애려면 border-collapse : collapse */
+.cart-background {
+    width: 700px;
+    background-color: #c2d3de;
+    padding: 30px;
 }
 
-td, th {
-    border: 1px solid black;
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+.cart-table td, .cart-table th {
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+    color: #c2d3ff;
+}
+
+.cart-table th:nth-child(2) { /* nth-child(n)셀렉터 -> n번째 등장하는 요소만 스타일링 */
+    width: 400px;
+}
+
+.cart-table td:nth-child(2) {
+    color: #c2d3ff;
+    font-weight: 700;
+}
+
+.cart-table td:nth-child(3), .cart-table td:nth-child(4) {
+    color: #c2d3ff;
+    font-weight: 700;
+    text-align: right;
+}
+
+.cart-table td:nth-child(5) {
+    color: navy;
+    font-weight: 700;
+    text-align: right;
+}
+
+.more {
+    padding: 30px 0 70px 0;
+}
+
+.buy_bt {
+    width: 35%;
+    max-width: 230px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 16px;
+    float: right;
 }

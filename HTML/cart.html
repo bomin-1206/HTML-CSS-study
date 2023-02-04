@@ -6,23 +6,42 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <table> <!-- 가로 행 만들 땐 <tr> 새로 열 만들 땐 <td> -->
+    <div class="cart-background">
+        <h3 style="color: navy; font-weight: 500; font-size: 25px;">Your Shopping Cart</h3>
+        <table class="cart-table"> <!-- 가로 행 만들 땐 <tr> 새로 열 만들 땐 <td> -->
             <thead> <!-- 제목 행 -->
                 <tr>
-                    <th><p>sdfdf</p><p>dfdfdf</p></th>
-                    <td>22222</td> <!-- 셀 안의 요소 상하 정렬 -> vertical-align : top/middle/bottom -->
-                    <td>33333333</td>
+                    <th></th>
+                    <th style="text-align: left">ITEM</th>
+                    <th>AMOUNT</th>
+                    <th>PRICE</th>
+                    <th>TOTAL</th>
                 </tr>
             </thead>
             <tbody> <!-- 일반 행 -->
                 <tr>
-                    <th>1</th>
-                    <td>2</td>
-                    <td>3</td>
+                    <td><img src="./img/camera1.png" width="70px"></td>
+                    <td><h3 style="margin: 0 0 8px 0; color: black">SONY</h3><p style="margin: 0">F3 70-200 MM F2.8 GM OSS</p></td>
+                    <td>1</td>
+                    <td>$1979.00</td>
+                    <td>$1979.00</td>
+                </tr>
+                <tr>
+                    <td><img src="./img/camera2.jpg" width="50px"></td>
+                    <td><h3 style="margin: 0 0 8px 0; color: black">SONY</h3><p style="margin: 0">Sonnar T* E 24mm F1.8 ZA</p></td>
+                    <td>1</td>
+                    <td>$989.00</td>
+                    <td>$989.00</td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: right; font-size: 20px; color: navy; font-weight: 700;" class="total_money">$2968.00</td>
                 </tr>
             </tbody>
         </table>
+        <div class="more">    
+            <a href="#" style="color: navy; font-weight: 500;">Edit your shopping cart</a>
+            <button class="buy_bt">Choose payment method</button>
+        </div>
     </div>
 </body>
 </html>
