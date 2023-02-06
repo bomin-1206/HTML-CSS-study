@@ -1,12 +1,76 @@
+@font-face {
+    font-family: 'font';
+    src: url(../font/BlackHanSans-Regular.ttf); /* 한글 폰트는 용량이 크니까 최대 2개 사용 */
+    /* 용량을 줄이려면 .woff 폰트 사용 */
+}
+
 div, input, textarea {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
+    font-family: 'gulim';
+    /* font-family: 'font'; */
 }
 /* normalize 사용하면 다른 브라우간에서도 똑같이 작용 */
+/* 
+p,h1,h2,h3,h4,span,button {
+    transform: rotate(0.03deg); 폰트 부드럽게 처리하려면 폰트를 살짝 회전
+} */
 
+/* 
+.flex-container {
+    display: flex; /* 가로 배치 */
+    /* align-items: center; 상하 정렬 */
+    /* flex-wrap: wrap; width크면 자동으로 밑으로 내림 */
+    /* flex-direction: column; display: flex사용시 세로 정렬 */
+    /* justify-content: center; flex 이용시 정렬
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 5px;
+} */
+
+.nav-container {
+    background-color: #ff7878;
+    color: white;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-item {
+    font-family: 'gulim';
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* .container {
+    display: flex;
+    background-color: #ff7878;
+    color: white;
+    align-items: center;
+    font-family: 'gumil';
+}
+
+.logo {
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.products, .services {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+} */
 
 .main-background {
     width: 100%;
