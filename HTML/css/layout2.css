@@ -188,3 +188,12 @@ input {
     color: white;
     border: none;
 }
+
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+    .nav-item {
+        font-size: 16px;
+    }
+}

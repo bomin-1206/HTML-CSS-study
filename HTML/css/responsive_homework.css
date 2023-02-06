@@ -1,0 +1,42 @@
+.main-content {
+    display: flex;
+    width : 100%;
+    text-align: center;
+}
+
+.first, .second {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.introduce {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first, .second {
+        width: 50%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .first, .second {
+        display: flex;
+        flex-direction: column;
+    }
+}
