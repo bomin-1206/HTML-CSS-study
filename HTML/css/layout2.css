@@ -214,6 +214,68 @@ input {
     margin-top: 20px;
 }
 
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.shop-item {
+    width: 33%;
+    padding: 10px;
+}
+/*
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    margin-top: 40%;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0; /* 반투명 */
+    /*
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    transition: all 1s; /* 위에 있는 스타일이 변하면 1초동안 서서히 변경 */
+    /*
+}
+*/
+
+.overlay-black {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    margin-top: 100%;
+    transition: all 1s;
+}
+
+.overlay-black span {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay-wrap:hover .overlay-black {
+    margin-top: 50%;
+}
+
+.shop-item img {
+    width: 100%;
+    display: block;
+}
+
 @media screen and (max-width: 1200px) {
     .main-title {
         font-size: 30px;
