@@ -133,22 +133,24 @@
     background-repeat: no-repeat;
     background-size: 100%;
     width: 50%;
-    float: left;
+    height: 50%;
 }
 
-/* .background-img1:hover {
+.background-img1:hover {
     background-image: url(../img/portfolio2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 40%;
-    transition: all 1s;
-} */
+    border: 40px solid white;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
 
 .background-img2 {
     background-image: url(../img/portfolio3.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 50%;
+    height: 50%;
 }
 
 .background-img3 {
@@ -156,6 +158,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     width: 50%;
+    height: 50%;
 }
 
 .background-img4 {
@@ -163,6 +166,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     width: 50%;
+    height: 50%;
 }
 
 .portfolio-1 p {
