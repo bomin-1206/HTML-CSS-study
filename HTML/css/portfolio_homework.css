@@ -133,7 +133,16 @@
     background-repeat: no-repeat;
     background-size: 100%;
     width: 50%;
+    float: left;
 }
+
+/* .background-img1:hover {
+    background-image: url(../img/portfolio2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40%;
+    transition: all 1s;
+} */
 
 .background-img2 {
     background-image: url(../img/portfolio3.jpg);
