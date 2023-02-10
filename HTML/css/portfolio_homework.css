@@ -25,17 +25,17 @@
     margin-top: 10px;
 }
 
-/* .portfolio1 {
-    width: 30%;
+.portfolio1 {
+    width: 350px;
     position: absolute;
-} */
+    top: 119px;
+    right: 80px;
+}
 
 .content {
     width: 100%;
-    height: 250px;
-    padding: 40px;
+    padding: 70px;
     box-sizing: border-box;
-    align-items: center;
     text-align: center;
 }
 
@@ -66,9 +66,8 @@
     margin: 0;
 }
 
-
 .product-container {
-    width: 80%;
+    width: 100%;
     max-width: 1000px;
     padding-top: 20px;
     margin: auto;
@@ -93,4 +92,101 @@
 
 .product-container p {
     font-size: 14px;
+}
+
+.portfolio {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.portfolio-title {
+    text-align: center;
+    align-items: center;
+}
+
+.portfolio-title p, h3 {
+    margin: 0;
+}
+
+.portfolio-img {
+    width: 70%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.portfolio-text {
+    color: white;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.portfolio-text p {
+    margin-top: 20px;
+}
+
+.background-img1 {
+    background-image: url(../img/portfolio2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+}
+
+.background-img2 {
+    background-image: url(../img/portfolio3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+}
+
+.background-img3 {
+    background-image: url(../img/portfolio4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+}
+
+.background-img4 {
+    background-image: url(../img/portfolio5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+}
+
+.portfolio-1 p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.collect {
+    width: 80%;
+    max-width: 1000px;
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.collect div {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.collect i {
+    background-color: #4646cd;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 20px;
+}
+
+.collect  p {
+    margin: 40px;
 }
