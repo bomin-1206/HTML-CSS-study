@@ -203,3 +203,9 @@
 .collect  p {
     margin: 40px;
 }
+
+@media screen and (max-width: 576px) {
+    .portfolio1 {
+        width: 30%;
+    }
+}
