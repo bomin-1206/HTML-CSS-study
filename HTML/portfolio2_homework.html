@@ -11,9 +11,9 @@
     />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
 </head> <!-- background-color: #f7f9fc, color: #6fbaf8 -->
-<body>
-    <div class="main-background w-100 h-100 p-5" style="background-color: #f7f9fc;">
-        <div class="row profile-container mx-auto w-75 bg-white p-4 align-items-center rounded shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+<body style="background-color: #f7f9fc;">
+    <div class="main-background w-100 h-100">
+        <div class="row profile-container mx-auto w-75 bg-white p-4 align-items-center rounded shadow-sm p-3 mb-5 rounded">
             <div class="profile col-2">
                 <img src="img/profile.png" width="100%">
             </div>
@@ -42,29 +42,66 @@
                 </div>
             </div>
         </div>
-
-        <div class="border border-2 w-75 mx-auto my-5"></div>
-        
-        <div class="row under-profile-container mx-auto w-75 d-flex justify-content-evenly">
-            <div class="col-2 bg-white shadow-sm p-3 mb-5 bg-body-tertiary rounded">
-                <h4 class="fw-semibold">WORKS</h4>
-                <p>Landing page design Flyer design Vue.js To-do app Shopping page design</p>
+        <div class="w-75 mx-auto p-3">
+            <p class="fs-4">Profile</p>
+            <div class="border border-2"></div>
+        </div>
+        <div class="row under-profile-container mx-auto w-75 h-100">
+            <div class="col-2">
+                <div class="bg-white shadow-sm p-4 rounded h-75">
+                    <h4 class="fw-semibold mb-3">WORKS</h4>
+                    <p class="text-secondary">Landing page design Flyer design<br/>Vue.js To-do app Shopping page design</p>    
+                </div>
             </div>
-            <div class="col-7 bg-white shadow-sm p-3 mb-5 bg-body-tertiary rounded">
-                <div class="top border-bottom">
-                    <h4 class="fw-semibold">ABOUT</h4>
-                    <p>I am a front-end designer who is excellent at Bootstrap, Sass, Foundation. I have dealt lots of in-house design works and outsource things. If you want to check my portfolio, please visit Killiansven.com</p>
+            <div class="col-8">
+                <div class="bg-white shadow-sm p-4 rounded h-100" style="box-sizing: border-box">
+                    <div class="top border-bottom pb-5 mb-3">
+                        <h4 class="fw-semibold mb-3">ABOUT</h4>
+                        <p class="text-secondary">I am a front-end designer who is excellent at Bootstrap, Sass, Foundation. I have dealt lots of<br/>in-house design works and outsource things. If you want to check my portfolio, please visit Killiansven.com</p>
+                    </div>
+                    <div class="under">
+                        <h4 class="fw-semibold mb-4">SKILLS</h4>
+                        <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">HTML5</span>
+                        <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">JavaScript</span>
+                        <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">CSS3</span>
+                        <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">Illustrator</span>
+                        <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">Photoshop</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="top bg-white shadow-sm p-3 mb-4 rounded text-center">
+                    <i class="fas fa-heart fa-4x mb-3" style="color:#6fbaf8"></i>
+                    <p>Find me at Linkedout.com</p>
+                    <button type="button" class="btn btn-dark px-4 d-block mx-auto mb-2" style="background-color: #6fbaf8; border: none">Sign up</button>
+                    <a class="text-decoration-none" style="color: #6fbaf8">Already a member?</a>
                 </div>
                 <div class="under">
-                    <h4 class="fw-semibold">SKILLS</h4>
-                    <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">HTML5</span>
-                    <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">JavaScript</span>
-                    <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">CSS3</span>
-                    <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">Illustrator</span>
-                    <span class="badge rounded-pill text-bg-light border border-secondary border-1 bg-transparent px-3 fs-6 fw-normal">Photoshop</span>
+                    <P class="pb-3 border-bottom">People You Might Know</P>
+                    <div class="people d-flex mb-2">
+                        <img class="m-1" style="width: 70px" src="img/profile.png">
+                        <div class="people-introduce">
+                            <p class="fw-bold fs-6 mb-0">Jason Derulo</p>
+                            <p class="mb-0 text-secondary">Developer</p>
+                            <div class="profile-icon d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt fa-lg me-2" style="color: #6fbaf8"></i>
+                                <p class="m-0" style="color: #6fbaf8">Seoul</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="people d-flex">
+                        <img class="m-1" style="width: 70px" src="img/profile.png">
+                        <div class="people-introduce">
+                            <p class="fw-bold fs-6 mb-0">Jason Derulo</p>
+                            <p class="mb-0 text-secondary">Developer</p>
+                            <div class="profile-icon d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt fa-lg me-2" style="color: #6fbaf8"></i>
+                                <p class="m-0" style="color: #6fbaf8">Seoul</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-2 bg-white shadow-sm p-3 mb-5 bg-body-tertiary rounded"></div>
         </div>
     </div>
 </body>
