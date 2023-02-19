@@ -136,6 +136,14 @@ p,h1,h2,h3,h4,span,button {
     /* box-sizing: content-box; 이러면 width가 padding, border 포함 안함 */
 }
 
+/* ::after(내부 맨 뒤에 뭔가 추가할 때)
+   ::before(내부 맨 앞에 뭔가 추가할 때) */
+.pseudo::first-letter { /* ::pseudo-element(내부의 일부분만 스타일줄 때) */
+    /* content: "안녕"; */
+    color: red;
+    font-size: 30px;
+}
+
 /* input[속성명 = 속성값] -> input[type=text] -> type이 text인 것만 디자인 해주세요 */
 /* 
 input { 
@@ -189,12 +197,29 @@ input {
     border: none;
 }
 
+.input-file::file-selector-button {
+    background-color: #ff7878;
+    border: none;
+    padding: 20px;
+}
+
+.input-file::file-selector-button:hover {
+    background-color: skyblue;
+}
+
 .product-container {
     width: 80%;
     max-width: 1000px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.product-container::after {
+    content: '';
+    display: block;
+    float: none;
+    clear: both;
 }
 
 .product-container div {
@@ -267,7 +292,7 @@ input {
     overflow: hidden;
 }
 
-.overlay-wrap:hover .overlay-black {
+.overlay-wrap:hover .overlay-black { /* :pseudo-class는 특정 요소가 다른 상태일 때 스타일 줄 수 있게 도와줌 */
     margin-top: 50%;
 }
 
