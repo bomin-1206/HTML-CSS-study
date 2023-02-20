@@ -207,6 +207,46 @@ input {
     background-color: skyblue;
 }
 
+input[type=file]::-webkit-file-upload-button { /* -webkit-은 크롬, 사파리,Edge 에서만 적용되는 스타일 / Firefox에서는 -moz- / Explorer에서는 -ms- */
+    background: skyblue;
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+input::-webkit-input-placeholder {
+    color: red;
+}
+
+input[type=range] {
+    appearance: none; /* 브라우저 기본 css 안보이게 */
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    appearance: none;
+    background: black;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    background: gray;
+    width: 50px;
+    height: 50px;
+}
+
+progress {
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: yellow;
+  }
+  
+  ::-webkit-progress-value {
+    background-color: orange;
+  }
+
 .product-container {
     width: 80%;
     max-width: 1000px;
