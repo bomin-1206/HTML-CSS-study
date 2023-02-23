@@ -1,0 +1,91 @@
+/* 어려운 단어 기억해야할 때 변수 문법 */
+$main-color : #2a4cb2;
+$sub-color : #eee;
+$main-size: 16px;
+
+/* nesting 문법 - 관련있는 class들 묶을 때 좋음 */
+.main-bg {
+    width: 100px;
+    h4 {
+        font-size: 16px;
+    }
+    button {
+        color: red;
+    }
+}
+
+/* @extend 문법 */
+%btn { /* %임시 클래스명 - 단독으로 컴파일되지 않음 */
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-green {
+    @extend %btn;
+    color: green;
+}
+
+.btn-red {
+    @extend %btn;
+    color: red;
+}
+
+.btn-blue {
+    @extend %btn;
+    color: blue;
+}
+
+.div {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.div-green {
+    @extend .div;
+    background-color: green;
+}
+
+.div-red {
+    @extend .div;
+    background-color: red;
+}
+
+.div-blue {
+    @extend .div;
+    background-color: blue;
+}
+
+/* @mixin 문법 */
+/* @mizin 문법의 $파라미터 긴 코드를 가변적으로 만들 때 씀 */
+@mixin font-style($구멍, $구멍2) {
+    font-size: $구멍;
+    #{ $구멍2 } : -1px
+}
+
+h2 {
+    @include font-style(30px, letter-spacing)
+}
+
+h3 {
+    @include font-style(20px, letter-spacing)
+}
+
+h4 {
+    @include font-style(10px, letter-spacing)
+}
+
+/* import 문법 - 다른파일에 있는 내용 가져오고 싶을 때 */
+@use 'reset';
+
+.background {
+    background-color: $main-color;
+    color: reset.$name-color; /* 다른파일의 $변수를 쓰려면 파일명.$변수수 */
+    font-size: ($main-size - 2px);
+}
+
+.box {
+    color: $sub-color;
+    font-size: ($main-size + 2px);
+}

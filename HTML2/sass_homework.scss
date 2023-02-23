@@ -1,0 +1,53 @@
+%list {
+    background-color: #2556e7;
+    color: white;
+}
+
+.list {
+    li {
+        width: 400px;
+        height: 40px;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    .first-li:active {
+        @extend %list
+    }
+    .second-li:active {
+        @extend %list
+    }
+    .third-li:active {
+        @extend %list
+    }
+}
+
+@mixin alert-style($background, $color) {
+    width: 700px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: $background;
+    color: $color;
+    span {
+        font-weight: bold;
+    }
+}
+
+.alert {
+    .first-alert {
+        @include alert-style(#bcffd2, #00772e)
+    }
+    .second-alert {
+        @include alert-style(#bcd9ff, #001277)
+    }
+    .third-alert {
+        @include alert-style(#f5ffbc, #6b7700)
+    }
+}

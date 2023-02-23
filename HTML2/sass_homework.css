@@ -1,0 +1,57 @@
+.list .third-li:active, .list .second-li:active, .list .first-li:active {
+  background-color: #2556e7;
+  color: white;
+}
+
+.list li {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.alert .first-alert {
+  width: 700px;
+  height: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #bcffd2;
+  color: #00772e;
+}
+.alert .first-alert span {
+  font-weight: bold;
+}
+.alert .second-alert {
+  width: 700px;
+  height: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #bcd9ff;
+  color: #001277;
+}
+.alert .second-alert span {
+  font-weight: bold;
+}
+.alert .third-alert {
+  width: 700px;
+  height: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f5ffbc;
+  color: #6b7700;
+}
+.alert .third-alert span {
+  font-weight: bold;
+}/*# sourceMappingURL=sass_homework.css.map */
