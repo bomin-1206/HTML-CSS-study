@@ -54,4 +54,30 @@
 }
 .alert .third-alert span {
   font-weight: bold;
+}
+
+.column .row {
+  width: 70%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.column .col-6 {
+  width: 50%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #cea6c8;
+  background-color: #dfc9dc;
+}
+.column .col-6 p {
+  margin: 5px;
+}
+.column .col-4 {
+  width: 33.33%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #cea6c8;
+  background-color: #dfc9dc;
+}
+.column .col-4 p {
+  margin: 5px;
 }/*# sourceMappingURL=sass_homework.css.map */
