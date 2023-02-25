@@ -35,6 +35,47 @@ p,h1,h2,h3,h4,span,button {
     margin: 5px;
 } */
 
+.ani-navbar {
+    width: 200px;
+    background-color: black;
+    color: white;
+    height: 100%;
+    padding: 25px;
+    position: fixed;
+    z-index: 5;
+    text-align: right;
+    transform: translateX(-150px);
+    transition: all 1s;
+}
+
+.ani-navbar:hover {
+    transform: translateX(0px);
+    text-align: center;
+    animation-name: menu;
+    animation-duration: 1s;
+}
+
+.ani-navbar:hover p {
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-250px);
+    }
+    50% {
+        transform: translateX(20px) skewX(-30deg);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes menu {
+    
+}
+
 .nav-container {
     background-color: #ff7878;
     color: white;
@@ -281,6 +322,94 @@ progress::-webkit-progress-value {
     box-sizing: border-box;
     color: white;
     margin-top: 20px;
+}
+
+.ani-text {
+    text-align: center;
+
+}
+
+.ani-text:hover {
+    animation-name: ani;
+    animation-duration: 1s;
+    /* animation-delay: 딜레이 양
+    animation-iteration-count: 반복횟수
+    animation-timing-function: 베지어 */
+}
+
+@keyframes ani {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    75% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.animation .ani-btn {
+    background-color: skyblue;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    margin: 30px auto;
+    padding: 15px 20px;
+}
+
+.animation .ani-btn:hover {
+    animation-name: button;
+    animation-duration: 0.5s;
+}
+
+@keyframes button {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.animation .ani-img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+.animation .ani-img:hover {
+    animation-name: image;
+    animation-duration: 1s;
+}
+
+@keyframes image {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(45deg);
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .shop-bg {
