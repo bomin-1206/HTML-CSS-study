@@ -79,6 +79,22 @@
       <!-- <div style="float: none; clear: both;"></div> -->
     </div>
 
+    
+    <!-- <video src="img/bridge.mp4" controls></video> -->
+    <video controls loop>
+      <!-- 자동재생은 autoplay muted
+      preload는 미리 다운로드 여부
+      none은 미리 다운 X, auto는 미리 다운 O, metadata 미리다운 적당히
+      poster는 썸네일 이미지
+      loop은 무한 반복 -->
+      <source src="img/bridge-m.webm" type="video/mp4">
+      <source src="img/bridge.mp4" type="video/mp4">
+    </video>
+
+    <audio controls muted>
+      <source src="img/bass.mp3">
+    </audio>
+
     <div class="shop-bg">
       <div class="shop-container">
         <div class="shop-item">
@@ -127,5 +143,6 @@
         </form>
       </div>
     </div>
+
   </body>
 </html>
