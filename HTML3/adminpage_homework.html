@@ -16,11 +16,34 @@
   </head>
   <body style="background-color: #eee; margin: 0px">
     <div class="adminpage">
+      <div class="sidebar">
+        <i class="fas fa-home fa-lg"></i>
+        <i class="fas fa-headphones fa-lg"></i>
+        <i class="fas fa-flag fa-lg"></i>
+        <i class="fas fa-chart-pie fa-lg"></i>
+      </div>
       <nav class="navbar">
-        <input type="text" placeholder="Search" class="search" />
+        <div class="search-btn">
+            <input type="text" placeholder="Search" class="search" />
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
         <div class="navbar-right">
-          <i class="fas fa-bell"></i>
-          <i class="fas fa-envelope"></i>
+          <i class="fas fa-bell">
+            <span
+              class="position-absolute top-25 translate-middle badge bg-danger"
+            >
+              5
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </i>
+          <i class="fas fa-envelope">
+            <span
+              class="position-absolute top-25 translate-middle badge bg-danger"
+            >
+              9
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </i>
           <p>Minny Park</p>
         </div>
       </nav>
@@ -65,57 +88,84 @@
           </div>
         </div>
         <div class="dashboard-bottom-chart">
-            <div class="dashboard-chart">
-                <div class="chart-title">
-                    <h3>Earnings Overview</h3>
-                </div>
-                <div class="chart">
-                    <canvas id="myChart"></canvas>
-                    </div>
-            
-                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            
-                    <script>
-                    var ctx = document.getElementById("myChart").getContext('2d');
-                    var myChart = new Chart(ctx, {
-                        type: 'line',
-                        data: {
-                        labels: ["January", "February", "March", "April", "May", "June", "July"],
-                        datasets: [{
-                            label: "Monthly",
-                            data: [0, 10, 5, 3, 20, 30, 45],
-                            fill: true,
-                            backgroundColor: 'rgb(106, 90, 205)',
-                            borderColor: 'rgb(106, 90, 205)',
-                            borderWidth: 1,
-                            lineTension: .4,
-                            },
-                        ],
-                        },
-                        options: {
-                        scales: {
-                            y: {
-                            beginAtZero: true,
-                            },
-                        },
-                        },
-                    })
-                    </script>
+          <div class="dashboard-chart">
+            <div class="chart-title">
+              <h3>Earnings Overview</h3>
             </div>
-            <table class="table">
-                <tr class="table-title">
-                    <td>Tasks</td>
-                </tr>
-                <tr class="table-content">
-                    <td>Borrowed Items<span class="badge rounded-pill text-bg-primary" style="float: right; margin-right: 20px;">14</span></td>
-                </tr>
-                <tr class="table-content">
-                    <td>Trello requests<span class="badge rounded-pill text-bg-primary" style="float: right; margin-right: 20px;">2</span></td>
-                </tr>
-                <tr class="table-content">
-                    <td>Marked Comments<span class="badge rounded-pill text-bg-primary" style="float: right; margin-right: 20px;">1</span></td>
-                </tr>
-            </table>
+            <div class="chart">
+              <canvas id="myChart"></canvas>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+            <script>
+              var ctx = document.getElementById("myChart").getContext("2d");
+              var myChart = new Chart(ctx, {
+                type: "line",
+                data: {
+                  labels: [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                  ],
+                  datasets: [
+                    {
+                      label: "Monthly",
+                      data: [0, 10, 5, 3, 20, 30, 45],
+                      fill: true,
+                      backgroundColor: "rgb(106, 90, 205)",
+                      borderColor: "rgb(106, 90, 205)",
+                      borderWidth: 1,
+                      lineTension: 0.4,
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                    },
+                  },
+                },
+              });
+            </script>
+          </div>
+          <table class="table">
+            <tr class="table-title">
+              <td>Tasks</td>
+            </tr>
+            <tr class="table-content">
+              <td>
+                Borrowed Items<span
+                  class="badge rounded-pill text-bg-primary"
+                  style="float: right; margin-right: 20px"
+                  >14</span
+                >
+              </td>
+            </tr>
+            <tr class="table-content">
+              <td>
+                Trello requests<span
+                  class="badge rounded-pill text-bg-primary"
+                  style="float: right; margin-right: 20px"
+                  >2</span
+                >
+              </td>
+            </tr>
+            <tr class="table-content">
+              <td>
+                Marked Comments<span
+                  class="badge rounded-pill text-bg-primary"
+                  style="float: right; margin-right: 20px"
+                  >1</span
+                >
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
