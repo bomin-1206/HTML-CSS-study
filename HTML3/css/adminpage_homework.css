@@ -14,12 +14,16 @@ input:focus {
     outline: none;
 }
 .search {
-    margin-left: 30px;
+    margin-left: 80px;
     padding: 10px;
     height: 40px;
     border: 1px solid grey;
     border-radius: 5px 0 0 5px;
     font-weight: 500;
+}
+input:focus {
+    width: 300px;
+    transition: 1s;
 }
 .search-button {
     background-color: #3b3b3b;
@@ -31,16 +35,61 @@ input:focus {
     color: white;
 }
 .sidebar {
+    position: absolute;
     float: left;
-    width: 40px;
+    width: 150px;
     height: 100vh;
     background-color: #6a5acd;
+    align-items: center;
+    transform: translateX(-100px);
+    z-index: 1;
 }
 .sidebar i {
     padding-top: 35px;
     padding-left: 7px;
     box-sizing: border-box;
     color: white;
+    display: flex;
+}
+.sidebar .icon {
+    transform: translateX(105px);
+    animation-name: icon;
+}
+.sidebar p {
+    margin: 0;
+    margin-left: 20px;
+    font-weight: 500;
+    transform: translateX(-200px);
+}
+.sidebar:hover {
+    transform: translateX(0px);
+    animation-duration: 1s;
+}
+.sidebar:hover p {
+    animation-name: slide;
+    animation-duration: 1s;
+}
+@keyframes icon {
+    0% {
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-200px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 .navbar .navbar-right {
     display: flex;
@@ -111,7 +160,7 @@ input:focus {
     background-color: #eee;
     box-shadow: 1px -1px 10px grey;
     border-radius: 5px;
-    width: 1090px;
+    width: 1250px;
 }
 .chart-title {
     padding: 15px;
@@ -127,8 +176,8 @@ input:focus {
 .table {
     box-shadow: 1px -1px 10px grey;
     border-radius: 5px;
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 250px;
     font-size: 25px;
 }
 tr td {
@@ -143,4 +192,8 @@ tr td {
 .table-content {
     background-color: white;
     color: grey;
+}
+
+@media screen and (max-width: 576px) {
+
 }
